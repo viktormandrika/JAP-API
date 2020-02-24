@@ -1,0 +1,20 @@
+{
+  "name": "craft-group/justanotherpanel-api",
+  "description": "",
+  "type": "library",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "kavalar",
+      "email": "apuc06@mail.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "lib/",
+      "traits/"
+    ]
+  }
+}
