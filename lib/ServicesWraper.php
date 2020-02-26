@@ -6,7 +6,7 @@ namespace lib;
 
 use traits\Request;
 
-class ServicesWraper
+class ServicesWrapper
 {
     use Request;
 
@@ -16,7 +16,8 @@ class ServicesWraper
     public static function find()
     {
         $model = new self();
-        $model->request = $model->request()->asArray();
+        $model->request = $model->setRequest(['action'=>'services'])->request()->asArray();
+
         return $model;
     }
 

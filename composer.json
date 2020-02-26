@@ -1,16 +1,15 @@
 {
-  "name": "craft-group/justanotherpanel-api",
+  "name": "viktor/justanotherpanel-api",
   "description": "",
   "type": "library",
   "license": "mit",
   "authors": [
     {
-      "name": "kavalar",
-      "email": "apuc06@mail.ru"
+      "name": "viktor mandrika",
+      "email": "viktor.mandrika1993@gmail.com"
     }
   ],
   "minimum-stability": "dev",
-  "require": {},
   "autoload": {
     "classmap": [
       "lib/",

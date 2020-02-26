@@ -10,7 +10,7 @@ class ServiceType
     const TYPE_PACKAGE = 'Package';
 
     public $fields = [
-        self::TYPE_DEFAULT => ['link', 'quantity', 'runs', 'interval'],
+        self::TYPE_DEFAULT => ['quantity', 'runs', 'interval'],
         self::TYPE_PACKAGE => ['link'],
     ];
 
