@@ -18,6 +18,7 @@ trait Request
      *
      */
     protected $_request;
+    protected $_response;
     protected $url;
     protected $data = [];
 
@@ -46,7 +47,7 @@ trait Request
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        $this->_request = curl_exec($ch);
+        $this->_response = curl_exec($ch);
 
         return $this;
 
@@ -55,12 +56,12 @@ trait Request
     protected function asJson()
     {
 
-        return $this->_request;
+        return $this->_response;
     }
 
     protected function asArray()
     {
-        return json_decode($this->_request, true);
+        return json_decode($this->_response, true);
     }
 
 }
